@@ -11,8 +11,8 @@ class Image
     end
   end
 
-  def blur(distance=1)
-    distance.times do
+  def blur(range=1)
+    range.times do
       numbers
     end
   end
