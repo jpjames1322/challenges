@@ -5,13 +5,13 @@ def initialize(rank, suit)
   @rank = rank
   @suit = suit
 end
+def random_card
+  Card.new(@rank.sample, @suit.sample)
+end
 
 def output_card
   puts "#{@rank} of #{@suit}"
 end 
-def random_card
-  Card.new(@rank.sample, @suit.sample)
-end
 
 end
 
@@ -26,9 +26,6 @@ class Deck
       end
     end
   end 
-  def shuffle
-    @card.shuffle!
-  end
 
   def output
     @cards.each do |card|
